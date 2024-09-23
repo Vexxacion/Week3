@@ -49,7 +49,7 @@ html {
     position: fixed;
     height: 100%;
     width: 100%;
-    background-color: rgba(114, 100, 100, 0.27);
+    background-color: rgba(255, 255, 255, 0.27);
     z-index: 2;
     top: 0;
     left: 0;
@@ -62,7 +62,7 @@ html {
 }
 
 .modal-content{
-    background-color: rgb(158, 75, 75);
+    background-color: rgb(34, 26, 26);
     margin: 5% auto;
     padding: 5rem;
     width: 600px;
@@ -81,7 +81,7 @@ html {
     float: right;
     cursor: pointer;
     font-size: 2rem;
-
+    color: #fff;
 }
 
 .movie-poster-modal {
@@ -89,8 +89,6 @@ html {
     border-radius: 20px; 
     overflow: hidden;
 }
-
-
 
 .movie-poster{
     width: 300px;
@@ -144,8 +142,6 @@ html {
     margin-bottom: 1rem;
 }
 
-
-
 .movie-info-overview-title {
     text-transform: capitalize;
     letter-spacing: 0.1rem;
@@ -179,6 +175,54 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.container {
+    width: 75%;
+    text-align: center;
+    margin: 0rem auto;
+}
+
+.carousel {
+    max-width: 500px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.carousel img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.carousel .carousel__item,
+.carousel .carousel__item--hidden{
+    display: none;
+}
+
+.carousel .carousel__item--visible {
+    display: block;
+}
+
+.carousel .carousel__actions{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel .carousel__actions button {
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    height: 50px;
+    width: 50px;
+    border: 0;
+    background-color: rgba(61, 50, 50, 0.329);
+    font-size: 1.8rem;
+    color: white;
+    margin: 0.5rem;
 }
 
 footer {
